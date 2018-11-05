@@ -48,7 +48,10 @@ namespace Project_3
             //Starting room
 
             Console.WriteLine("\n You are in L4");
-            Console.WriteLine(" ((ROOM DESCRIPTION))");
+            Console.WriteLine(" [QUARANTINE ROOM]");
+            Console.WriteLine("\n There is a glass cell used to quarantine potentially infected patients.");
+            Console.WriteLine("\n The Doctor is dead on the floor. He is clutching 'Surgical Scissors'");
+            Console.WriteLine("\n ZOMBIE is crumpled against the wall next to the door.\n\n");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" 1. [North] Exit the Quarantine Room. Go into the Hallway");
@@ -79,11 +82,16 @@ namespace Project_3
 
             Console.Clear();
             Console.WriteLine("\n You are in L3");
-            Console.WriteLine("((ROOM DESCRIPTION))");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("\n There is screaming further down the hallway.");
+            Console.WriteLine("\n The florescent light is blinking.");
+            Console.WriteLine("\n There are two doors. [West] ICU 1. [EAST] ICU 2\n\n");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" 1. [North] Continue down the hallway");
-            Console.WriteLine(" 2. [South] Enter the Quarantine Room");
+            Console.WriteLine(" 2. [East] Enter ICU 2");
+            Console.WriteLine(" 3. [South] Enter the Quarantine Room");
+            Console.WriteLine(" 4. [West] Enter ICU 1");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -98,8 +106,24 @@ namespace Project_3
                     L2();
                     break;
                 case '2':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L3();
+                    break;
+                case '3':
                     Moving();
                     L4();
+                    break;
+                case '4':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L3();
                     break;
                 case 'q':
                     break;
@@ -204,6 +228,20 @@ namespace Project_3
         {
             Console.Clear();
             Console.Write("\n Moving ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Clear();
+        }
+
+        public static void Opening()
+        {
+            Console.Clear();
+            Console.Write("\n Opening ");
             Thread.Sleep(300);
             Console.Write(". ");
             Thread.Sleep(300);
