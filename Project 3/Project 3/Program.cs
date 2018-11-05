@@ -360,6 +360,7 @@ namespace Project_3
             Console.WriteLine("\n Press any key to continue");
             Console.ReadLine();
             Console.Clear();
+            L4();
         }
 
     }
