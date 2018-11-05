@@ -19,16 +19,36 @@ namespace Project_3
         static void Main(string[] args)
         {
             //Test
-            L4();
+            SkipOpeningSequence();
+        }
+
+        static void SkipOpeningSequence()
+        {
+            //Skip Option
+
+            Console.WriteLine("\n Skip the Opening Sequence?");
+            Console.WriteLine("\n 1. Yes");
+            Console.WriteLine(" 2. No");
+            char skip = Convert.ToChar(Console.ReadKey().KeyChar);
+
+            switch (skip)
+            {
+                case '1':
+                    Console.Clear();
+                    L4();
+                    break;
+                case '2':
+                    Console.Clear();
+                    OpeningSequence();
+                    break;
+            }
         }
         public static void L4()
         {
             //Starting room
 
-            //Opening Sequence
-            OpeningSequence();
-
-            Console.WriteLine("You are in L4");
+            Console.WriteLine("\n You are in L4");
+            Console.WriteLine(" ((ROOM DESCRIPTION))");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" 1. [North] Exit the Quarantine Room. Go into the Hallway");
@@ -42,6 +62,7 @@ namespace Project_3
             switch (response)
             {
                 case '1':
+                    Moving();
                     L3();
                     break;
                 case 'q':
@@ -57,13 +78,40 @@ namespace Project_3
             //Corridor
 
             Console.Clear();
-            Console.WriteLine("You are in L3");
-            Console.ReadLine();
+            Console.WriteLine("\n You are in L3");
+            Console.WriteLine("((ROOM DESCRIPTION))");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. [North] Continue down the hallway");
+            Console.WriteLine(" 2. [South] Enter the Quarantine Room");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" Q. SEARCH Doctor's Corpse Lying on the Ground");
+            Console.WriteLine(" W. INSPECT ZOMBIE lying on the Ground");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+
+            switch (response)
+            {
+                case '1':
+                    Moving();
+                    L2();
+                    break;
+                case '2':
+                    Moving();
+                    L4();
+                    break;
+                case 'q':
+                    break;
+                case 'w':
+                    break;
+            }           
         }
 
         public static void L2()
         {
-
+            Console.WriteLine("You are in L3");
+            Console.ReadLine();
         }
 
         public static void K2()
@@ -152,9 +200,33 @@ namespace Project_3
 
         }
 
+        public static void Moving()
+        {
+            Console.Clear();
+            Console.Write("\n Moving ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Write(". ");
+            Thread.Sleep(300);
+            Console.Clear();
+        }
+
         public static void OpeningSequence()
         {
             //Opening Sequence
+            Console.Write("\n Loading ");
+            Thread.Sleep(1000);
+            Console.Write(". ");
+            Thread.Sleep(1000);
+            Console.Write(". ");
+            Thread.Sleep(1000);
+            Console.Write(". ");
+            Thread.Sleep(1000);
+
+            Console.Clear();
             Console.WriteLine("");
             Console.WriteLine(" You wake up in bed surrounded by fibreglass walls. There is one door.");
             Thread.Sleep(1000);
