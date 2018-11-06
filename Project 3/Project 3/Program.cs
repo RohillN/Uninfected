@@ -88,7 +88,7 @@ namespace Project_3
             Console.WriteLine("\n There are two doors. [West] ICU 1. [EAST] ICU 2\n\n");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" 1. [North] Continue down the hallway");
+            Console.WriteLine(" 1. [North] hallway");
             Console.WriteLine(" 2. [East] Enter ICU 2");
             Console.WriteLine(" 3. [South] Enter the Quarantine Room");
             Console.WriteLine(" 4. [West] Enter ICU 1");
@@ -134,54 +134,516 @@ namespace Project_3
 
         public static void L2()
         {
-            Console.WriteLine("You are in L3");
-            Console.ReadLine();
+            Console.WriteLine("You are in L2");
+            Console.WriteLine(" [HALLWAY CORNER]");
+            Console.WriteLine(" There is a wheelchair in the corner. ");
+            Console.WriteLine(" Strange… the arms grasping wheels aren’t attached to a body… ");
+            Console.WriteLine(" There is 1 door. [North] Emergency Room 1.");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Enter 'Emergency Room 1'");
+            Console.WriteLine(" A. [West] Hallway");
+            Console.WriteLine(" S. [South] Hallway");
+            Console.WriteLine(" D. [East] Wall");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" Q. SEARCH Doctor's Corpse Lying on the Ground");
+            Console.WriteLine(" W. INSPECT ZOMBIE lying on the Ground");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+
+            switch (response)
+            {
+                case 'w':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L2();
+                    break;
+                case 'a':
+                    Moving();
+                    L3();
+                    break;
+                case 's':
+                    Moving();
+                    K2();
+                    break;
+                case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L2();
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+            }           
         }
 
         public static void K2()
         {
+            Console.WriteLine("You are in K2");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("There is a corpse on the floor. Lying face down in blood. ");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
 
         public static void J2()
         {
+            Console.WriteLine("You are in J2");
+            Console.WriteLine(" [HALLWAY CORNER]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void J3()
         {
+            Console.WriteLine("You are in J3");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void J4()
         {
+            Console.WriteLine("You are in J4");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void J5()
         {
+            Console.WriteLine("You are in J5");
+            Console.WriteLine(" [HALLWAY INTERSECTION]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void I5()
         {
+            Console.WriteLine("You are in I5");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void H5()
         {
+            Console.WriteLine("You are in H5");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void G5()
         {
+            Console.WriteLine("You are in G5");
+            Console.WriteLine(" [HALLWAY INTERSECTION]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void G6()
         {
+            Console.WriteLine("You are in G6");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void G7()
         {
+            Console.WriteLine("You are in G7");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void G8()
         {
+            Console.WriteLine("You are in G8");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void G9()
         {
@@ -189,39 +651,381 @@ namespace Project_3
         }
         public static void F5()
         {
+            Console.WriteLine("You are in F5");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void E5()
         {
+            Console.WriteLine("You are in E5");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void D5()
         {
+            Console.WriteLine("You are in D5");
+            Console.WriteLine(" [HALLWAY INTERSECTION]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void D4()
         {
+            Console.WriteLine("You are in D4");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void D6()
         {
+            Console.WriteLine("You are in D6");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void D7()
         {
+            Console.WriteLine("You are in D7");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void D8()
         {
+            Console.WriteLine("You are in D8");
+            Console.WriteLine(" [HALLWAY CORNER]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void C8()
         {
+            Console.WriteLine("You are in C8");
+            Console.WriteLine(" [HALLWAY]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
         public static void B8()
         {
+            Console.WriteLine("You are in B8");
+            Console.WriteLine(" [HALLWAY CORNER]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine(" ## MOVE ##");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] ");
+            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" S. [South] ");
+            Console.WriteLine(" D. [East]");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
+            switch (response)
+            {
+                case 'w':
+                    break;
+                case 'a':
+                    break;
+                case 's':
+                    break;
+                case 'd':
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
         }
 
         public static void Moving()
