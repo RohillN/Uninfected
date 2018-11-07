@@ -231,9 +231,9 @@ namespace Project_3
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" A. [West] J2");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" D. [East] L2");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -246,12 +246,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    K2();
                     break;
                 case 'a':
+                    Moving();
+                    J2();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    K2();
                     break;
                 case 'd':
+                    Moving();
+                    L2();
                     break;
                 case '1':
                     break;
@@ -273,9 +287,9 @@ namespace Project_3
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" W. [North] J1");
             Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" S. [South] J3");
             Console.WriteLine(" D. [East]");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
@@ -289,12 +303,27 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J2();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J2();
                     break;
                 case 's':
+                    Moving();
+                    J3();
                     break;
                 case 'd':
+                    Moving();
+                    K2();
                     break;
                 case '1':
                     break;
@@ -315,9 +344,9 @@ namespace Project_3
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" W. [North] J2");
             Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" S. [South] J4");
             Console.WriteLine(" D. [East]");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
@@ -331,12 +360,27 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    J2();
                     break;
                 case 'a':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J3();
                     break;
                 case 's':
+                    Moving();
+                    J4();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J3();
                     break;
                 case '1':
                     break;
@@ -357,9 +401,9 @@ namespace Project_3
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" W. [North] J3");
             Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" S. [South] J5");
             Console.WriteLine(" D. [East]");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
@@ -373,12 +417,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    J3();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J4();
                     break;
                 case 's':
+                    Moving();
+                    J5();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J4();
                     break;
                 case '1':
                     break;
@@ -399,8 +457,8 @@ namespace Project_3
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" W. [North] J4");
+            Console.WriteLine(" A. [West] I5");
             Console.WriteLine(" S. [South] Wall");
             Console.WriteLine(" D. [East]");
             Console.WriteLine("");
@@ -415,12 +473,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    J4();
                     break;
                 case 'a':
+                    Moving();
+                    I5();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J5();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    J5();
                     break;
                 case '1':
                     break;
@@ -442,9 +514,9 @@ namespace Project_3
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" A. [West] H5");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" D. [East] J5");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -457,12 +529,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    I5();
                     break;
                 case 'a':
+                    Moving();
+                    H5();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    I5();
                     break;
                 case 'd':
+                    Moving();
+                    J5();
                     break;
                 case '1':
                     break;
@@ -484,9 +570,9 @@ namespace Project_3
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
+            Console.WriteLine(" A. [West] G5");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" D. [East] I5");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -499,12 +585,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    H5();
                     break;
                 case 'a':
+                    Moving();
+                    G5();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    H5();
                     break;
                 case 'd':
+                    Moving();
+                    I5();
                     break;
                 case '1':
                     break;
@@ -526,9 +626,9 @@ namespace Project_3
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" A. [West] F5");
+            Console.WriteLine(" S. [South] G6");
+            Console.WriteLine(" D. [East] H5");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -541,12 +641,23 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G5();
                     break;
                 case 'a':
+                    Moving();
+                    F5();
                     break;
                 case 's':
+                    Moving();
+                    G6();
                     break;
                 case 'd':
+                    Moving();
+                    H5();
                     break;
                 case '1':
                     break;
@@ -583,12 +694,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    G5();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G6();
                     break;
                 case 's':
+                    Moving();
+                    G7();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G6();
                     break;
                 case '1':
                     break;
@@ -625,12 +750,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    G6();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G7();
                     break;
                 case 's':
+                    Moving();
+                    G8();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G7();
                     break;
                 case '1':
                     break;
@@ -667,12 +806,27 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    G7();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G8();
                     break;
                 case 's':
+                    Opening();
+                    Console.WriteLine("Do you have a key?");
+                    //if key == yes | Then the player can escape! 
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    G8();
                     break;
                 case '1':
                     break;
@@ -713,12 +867,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    F5();
                     break;
                 case 'a':
+                    Moving();
+                    E5();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    F5();
                     break;
                 case 'd':
+                    Moving();
+                    G5();
                     break;
                 case '1':
                     break;
@@ -755,12 +923,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    E5();
                     break;
                 case 'a':
+                    Moving();
+                    D5();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    E5();
                     break;
                 case 'd':
+                    Moving();
+                    F5();
                     break;
                 case '1':
                     break;
@@ -797,12 +979,23 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    D4();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D5();
                     break;
                 case 's':
+                    Moving();
+                    D6();
                     break;
                 case 'd':
+                    Moving();
+                    E5();
                     break;
                 case '1':
                     break;
@@ -839,12 +1032,25 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    //Hallway blocked
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D4();
                     break;
                 case 's':
+                    Moving();
+                    D5();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D4();
                     break;
                 case '1':
                     break;
@@ -881,12 +1087,26 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    D5();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D6();
                     break;
                 case 's':
+                    Moving();
+                    D7();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D6();
                     break;
                 case '1':
                     break;
@@ -923,12 +1143,27 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    D6();
                     break;
                 case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D7();
                     break;
                 case 's':
+                    Moving();
+                    D8();
                     break;
                 case 'd':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D7();
                     break;
                 case '1':
                     break;
@@ -965,12 +1200,27 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Moving();
+                    D7();
                     break;
                 case 'a':
+                    Moving();
+                    C8();
                     break;
                 case 's':
+                    Opening();
+                    Console.WriteLine("\n The Door is Locked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D8();
                     break;
                 case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D8();
                     break;
                 case '1':
                     break;
@@ -1007,12 +1257,24 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
                 case 'a':
+                    Moving();
+                    B8();
                     break;
                 case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
                 case 'd':
+                    Moving();
+                    D8();
                     break;
                 case '1':
                     break;
@@ -1049,12 +1311,24 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
                     break;
                 case 'a':
+                    Opening();
+                    //Do you have a key
+                    //A8();
                     break;
                 case 's':
+                    Opening();
+                    //Do you have a key
+                    //B9()
                     break;
                 case 'd':
+                    Moving();
+                    C8();
                     break;
                 case '1':
                     break;
