@@ -16,6 +16,15 @@ namespace Project_3
 {
     class Program
     {
+        public static Character[] player = new Character[1];
+        public static Character[] zombie = new Character[10];
+        public struct Character
+        {
+            public int attack;
+            public int health;
+
+        }
+        private static int attack = 0, health = 10;
         static void Main(string[] args)
         {
             //Test
@@ -1464,6 +1473,61 @@ namespace Project_3
             Console.Clear();
             L4();
         }
+        public static void Battle()
+        {
 
+            Random rand = new Random();
+            Console.WriteLine("A ZOMBIE approaches.");
+            Console.WriteLine(" [HALLWAY CORNER]");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. Attack ");
+            Console.WriteLine(" 2. Block ");
+            Console.WriteLine(" 3. Flee");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+
+            switch (response)
+            {
+                case '1':
+                    int damage = rand.Next(1, attack);
+                    if (damage>2)
+                    {
+
+                    }
+                    break;
+                case '2':
+                    Console.Clear();
+                    Console.WriteLine("You ready yourself for the ZOMBIE's attack");         
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.WriteLine("The ZOMBIE lunges itself at you");
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.Write(". ");
+                    Thread.Sleep(300);
+                    Console.WriteLine("You successfully dodge the ZOMBIE's attack.");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    break;
+                case '3':
+
+                    break;
+
+                    /* Combat system between player and zombie, uses next random to hit 1-weapon with a 1 and 2 being a "splash" and any other number = 1 damage done to zombie,
+                    player starts with 10 health, each zombie has 5 health. zombie rolls 1,3 with 1 and 2 "splashing" players health is remembered, zombie has chance to drop something beneficial?
+                    if player health = 0 game is over, if zombie health = 0 player returns to the method they were in with their current health - medkit to restore health?*/
+            }
+        }
     }
 }
