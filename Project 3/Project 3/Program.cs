@@ -16,6 +16,7 @@ namespace Project_3
 {
     class Program
     {
+        private static int attack = 0;
         static void Main(string[] args)
         {
             //Test
@@ -1190,6 +1191,11 @@ namespace Project_3
             Console.Clear();
             L4();
         }
-
+        public static void Battle()
+        {
+        /* Combat system between player and zombie, uses next random to hit 1-weapon with a 1 and 2 being a "splash" and any other number = 1 damage done to zombie,
+        player starts with 10 health, each zombie has 5 health. zombie rolls 1,3 with 1 and 2 "splashing" players health is remembered, zombie has chance to drop something beneficial?
+        if player health = 0 game is over, if zombie health = 0 player returns to the method they were in with their current health - medkit to restore health?*/
+        }
     }
 }
