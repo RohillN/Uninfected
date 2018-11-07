@@ -24,7 +24,13 @@ namespace Project_3
             public int health;
 
         }
-        private static int attack = 0, health = 10;
+        public static void Info()
+        {
+            player.attack = 0;
+            player.health = 10;
+
+        }
+
         static void Main(string[] args)
         {
             //Test
