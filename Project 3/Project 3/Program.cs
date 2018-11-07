@@ -54,23 +54,47 @@ namespace Project_3
             Console.WriteLine("\n ZOMBIE is crumpled against the wall next to the door.\n\n");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" 1. [North] Exit the Quarantine Room. Go into the Hallway");
+            Console.WriteLine(" W. [North] Exit the Quarantine Room. Go into the Hallway");
+            Console.WriteLine(" A. [West] Room Wall");
+            Console.WriteLine(" S. [South] Room Wall");
+            Console.WriteLine(" D. [East] Room Wall");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
-            Console.WriteLine(" Q. SEARCH Doctor's Corpse Lying on the Ground");
-            Console.WriteLine(" W. INSPECT ZOMBIE lying on the Ground");
+            Console.WriteLine(" 1. SEARCH Doctor's Corpse Lying on the Ground");
+            Console.WriteLine(" 2. INSPECT ZOMBIE lying on the Ground");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
             switch (response)
             {
-                case '1':
+                case 'w':
                     Moving();
                     L3();
                     break;
-                case 'q':
+                case 'a':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L4();
                     break;
-                case 'w':
+                case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L4();
+                    break;
+                case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    L4();
+                    break;
+                case '1':
+                    break;
+                case '2':
                     break;
             }
 
@@ -88,24 +112,24 @@ namespace Project_3
             Console.WriteLine("\n There are two doors. [West] ICU 1. [EAST] ICU 2\n\n");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" 1. [North] hallway");
-            Console.WriteLine(" 2. [East] Enter ICU 2");
-            Console.WriteLine(" 3. [South] Enter the Quarantine Room");
-            Console.WriteLine(" 4. [West] Enter ICU 1");
+            Console.WriteLine(" W. [North] hallway");
+            Console.WriteLine(" A. [West] Enter ICU 1");
+            Console.WriteLine(" S. [South] Enter the Quarantine Room");
+            Console.WriteLine(" D. [East] Enter ICU 2");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
-            Console.WriteLine(" Q. SEARCH Doctor's Corpse Lying on the Ground");
-            Console.WriteLine(" W. INSPECT ZOMBIE lying on the Ground");
+            Console.WriteLine(" 1. SEARCH Doctor's Corpse Lying on the Ground");
+            Console.WriteLine(" 2. INSPECT ZOMBIE lying on the Ground");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
             switch (response)
             {
-                case '1':
+                case 'w':
                     Moving();
                     L2();
                     break;
-                case '2':
+                case 'a':
                     Opening();
                     Console.WriteLine("\n The Door is Locked.");
                     Console.WriteLine("\n Press any key to continue");
@@ -113,11 +137,11 @@ namespace Project_3
                     Console.Clear();
                     L3();
                     break;
-                case '3':
+                case 's':
                     Moving();
                     L4();
                     break;
-                case '4':
+                case 'd':
                     Opening();
                     Console.WriteLine("\n The Door is Locked.");
                     Console.WriteLine("\n Press any key to continue");
@@ -125,9 +149,9 @@ namespace Project_3
                     Console.Clear();
                     L3();
                     break;
-                case 'q':
+                case '1':
                     break;
-                case 'w':
+                case '2':
                     break;
             }           
         }
@@ -148,8 +172,8 @@ namespace Project_3
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
-            Console.WriteLine(" Q. SEARCH Doctor's Corpse Lying on the Ground");
-            Console.WriteLine(" W. INSPECT ZOMBIE lying on the Ground");
+            Console.WriteLine(" 1. SEARCH Doctor's Corpse Lying on the Ground");
+            Console.WriteLine(" 2. INSPECT ZOMBIE lying on the Ground");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
 
             switch (response)
@@ -164,11 +188,11 @@ namespace Project_3
                     break;
                 case 'a':
                     Moving();
-                    L3();
+                    K2();
                     break;
                 case 's':
                     Moving();
-                    K2();
+                    L3();
                     break;
                 case 'd':
                     Console.WriteLine("\n There is a wall.");
