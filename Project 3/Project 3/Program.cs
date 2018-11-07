@@ -16,6 +16,14 @@ namespace Project_3
 {
     class Program
     {
+        public static Character[] player = new Character[1];
+        public static Character[] zombie = new Character[10];
+        public struct Character
+        {
+            public int attack;
+            public int health;
+
+        }
         private static int attack = 0, health = 10;
         static void Main(string[] args)
         {
@@ -1193,6 +1201,7 @@ namespace Project_3
         }
         public static void Battle()
         {
+
             Random rand = new Random();
             Console.WriteLine("A ZOMBIE approaches.");
             Console.WriteLine(" [HALLWAY CORNER]");
