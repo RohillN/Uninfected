@@ -60,7 +60,7 @@ namespace Project_3
         }
         public static void L4()
         {
-            //Starting room
+            //Starting room //Description O // Movement O // Action X
 
             Console.WriteLine("\n You are in L4");
             Console.WriteLine(" [QUARANTINE ROOM]");
@@ -117,7 +117,7 @@ namespace Project_3
 
         public static void L3()
         {
-            //Corridor
+            //Corridor //Description O // Movement O // Action X
 
             Console.Clear();
             Console.WriteLine("\n You are in L3");
@@ -173,7 +173,7 @@ namespace Project_3
 
         public static void L2()
         {
-            Console.WriteLine("You are in L2");
+            Console.WriteLine("You are in L2"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY CORNER]");
             Console.WriteLine(" There is a wheelchair in the corner. ");
             Console.WriteLine(" Strange… the arms grasping wheels aren’t attached to a body… ");
@@ -225,15 +225,15 @@ namespace Project_3
 
         public static void K2()
         {
-            Console.WriteLine("You are in K2");
+            Console.WriteLine("You are in K2"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
             Console.WriteLine("There is a corpse on the floor. Lying face down in blood. ");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West] J2");
+            Console.WriteLine(" A. [West] Hallway Corner");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East] L2");
+            Console.WriteLine(" D. [East] Hallway Corner");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -280,17 +280,17 @@ namespace Project_3
 
         public static void J2()
         {
-            Console.WriteLine("You are in J2");
+            Console.WriteLine("You are in J2"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY CORNER]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There is a sign on the wall.");
+            Console.WriteLine(" [ER] There is 1 door. [North] Emergency Room 2.");
+            Console.WriteLine(" There is screaming from inside the room.");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] J1");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] J3");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Emergency Room 2");
+            Console.WriteLine(" A. [West] Wall");
+            Console.WriteLine(" S. [South] Hallway");
+            Console.WriteLine(" D. [East] Hallway");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -337,17 +337,17 @@ namespace Project_3
         }
         public static void J3()
         {
-            Console.WriteLine("You are in J3");
+            Console.WriteLine("You are in J3"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" You can hear running water. ");
+            Console.WriteLine(" [West] Showers and Lockers.");
+            Console.WriteLine(" Bloodied footsteps mark the floor going into the room…");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] J2");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] J4");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway Corner");
+            Console.WriteLine(" A. [West] Showers and Lockers.");
+            Console.WriteLine(" S. [South] Hallway");
+            Console.WriteLine(" D. [East] Wall");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -394,17 +394,17 @@ namespace Project_3
         }
         public static void J4()
         {
-            Console.WriteLine("You are in J4");
+            Console.WriteLine("You are in J4"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There is a message written on the wall… ");
+            Console.WriteLine(" It is in blood… ");
+            Console.WriteLine(" ‘Find the Card Key’");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] J3");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] J5");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway");
+            Console.WriteLine(" A. [West] Wall");
+            Console.WriteLine(" S. [South] Hallway Intersection");
+            Console.WriteLine(" D. [East] Wall");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -450,17 +450,17 @@ namespace Project_3
         }
         public static void J5()
         {
-            Console.WriteLine("You are in J5");
+            Console.WriteLine("You are in J5"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY INTERSECTION]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Sign reads [North] ER / ICU / Quarantine Room [East] Toilets ");
+            Console.WriteLine(" [South] Inpatient Rooms / Lab 2 [West] Imaging / Surgery / Hospital Lobby. ");
+            Console.WriteLine(" There is a drinking fountain in the corner and empty chairs against the wall.");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] J4");
-            Console.WriteLine(" A. [West] I5");
-            Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway");
+            Console.WriteLine(" A. [West] Hallway");
+            Console.WriteLine(" S. [South] Hallway");
+            Console.WriteLine(" D. [East] Hallway");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -481,14 +481,14 @@ namespace Project_3
                     I5();
                     break;
                 case 's':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Inpatient Rooms' has been heavily barricaded with hospital beds.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
                     J5();
                     break;
                 case 'd':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Toilets' has been heavily barricaded with hospital beds.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -506,17 +506,17 @@ namespace Project_3
         }
         public static void I5()
         {
-            Console.WriteLine("You are in I5");
+            Console.WriteLine("You are in I5"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There are 3 dead ZOMBIES on the floor. ");
+            Console.WriteLine(" 1 Corpse in a Lab coat. ");
+            Console.WriteLine(" There seems to have been a struggle..");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West] H5");
+            Console.WriteLine(" A. [West] Hallway");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East] J5");
+            Console.WriteLine(" D. [East] Hallway");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -562,17 +562,17 @@ namespace Project_3
         }
         public static void H5()
         {
-            Console.WriteLine("You are in H5");
+            Console.WriteLine("You are in H5"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Bullet casings on the floor. ");
+            Console.WriteLine(" Bullet holes in the walls. ");
+            Console.WriteLine(" ‘There must be someone with a gun in this building.’");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West] G5");
+            Console.WriteLine(" A. [West] Hallway Intersection");
             Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East] I5");
+            Console.WriteLine(" D. [East] Hallway");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -618,17 +618,17 @@ namespace Project_3
         }
         public static void G5()
         {
-            Console.WriteLine("You are in G5");
+            Console.WriteLine("You are in G5"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY INTERSECTION]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Sign Reads [North] Imaging Department [East] ER/ ICU / Quarantine Room ");
+            Console.WriteLine(" [South] Hospital Lobby ");
+            Console.WriteLine(" [West] Surgery / Recovery Room / Lab 1. ");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West] F5");
-            Console.WriteLine(" S. [South] G6");
-            Console.WriteLine(" D. [East] H5");
+            Console.WriteLine(" W. [North] Hallway Towards Imaging Department");
+            Console.WriteLine(" A. [West] Hallway Towards 'Surgery' 'Lab 1'");
+            Console.WriteLine(" S. [South] Hallway Towards Hospital Lobby");
+            Console.WriteLine(" D. [East] Hallway Towards 'ER/ICU'");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -641,7 +641,7 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Imaging Department' has been heavily barricaded with hospital beds.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -671,17 +671,17 @@ namespace Project_3
         }
         public static void G6()
         {
-            Console.WriteLine("You are in G6");
+            Console.WriteLine("You are in G6"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There are 2 stores.   ");
+            Console.WriteLine(" [West] Pharmacy [East] Convenience Store.");
+            Console.WriteLine(" Food is scattered along the floor.");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] Wall");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] Wall");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway");
+            Console.WriteLine(" A. [West] Pharmacy");
+            Console.WriteLine(" S. [South] Towards Hospital Lobby");
+            Console.WriteLine(" D. [East] Convenience Store");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -698,7 +698,7 @@ namespace Project_3
                     G5();
                     break;
                 case 'a':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Pharmacy' has been heavily barricaded with shelves.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -709,7 +709,7 @@ namespace Project_3
                     G7();
                     break;
                 case 'd':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Convenience Store' has been heavily barricaded with shelves.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -727,17 +727,17 @@ namespace Project_3
         }
         public static void G7()
         {
-            Console.WriteLine("You are in G7");
+            Console.WriteLine("You are in G7"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There are 2 stores. ");
+            Console.WriteLine(" [West] Pharmacy ");
+            Console.WriteLine(" [East] Convenience Store.");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] ");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] ");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway");
+            Console.WriteLine(" A. [West] Pharmacy");
+            Console.WriteLine(" S. [South] Towards Hospital Lobby");
+            Console.WriteLine(" D. [East] Convenience Store");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -754,7 +754,7 @@ namespace Project_3
                     G6();
                     break;
                 case 'a':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Pharmacy' has been heavily barricaded with shelves.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -765,7 +765,7 @@ namespace Project_3
                     G8();
                     break;
                 case 'd':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path to 'Convenience Store' has been heavily barricaded with shelves.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -783,11 +783,11 @@ namespace Project_3
         }
         public static void G8()
         {
-            Console.WriteLine("You are in G8");
+            Console.WriteLine("You are in G8"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Sign hanging from the ceiling reads ");
+            Console.WriteLine(" [WEST WING] SURGERY / STAFF ROOM");
+            Console.WriteLine(" [EAST WING] ER / INPATIENTS ROOMS");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] ");
@@ -810,19 +810,18 @@ namespace Project_3
                     G7();
                     break;
                 case 'a':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The path is blocked.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
                     G8();
                     break;
-                case 's':
-                    Opening();
-                    Console.WriteLine("Do you have a key?");
+                case 's':                    
+                    Console.WriteLine("Are You sure you want to exit?");
                     //if key == yes | Then the player can escape! 
                     break;
                 case 'd':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The path is blocked.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -844,17 +843,17 @@ namespace Project_3
         }
         public static void F5()
         {
-            Console.WriteLine("You are in F5");
+            Console.WriteLine("You are in F5"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
+            Console.WriteLine(" Broken glass on the floor.. Nothing else.");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] ");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] ");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West] Hallway Towards Surgery/Labs");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East] Hallway Intersection");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -900,17 +899,17 @@ namespace Project_3
         }
         public static void E5()
         {
-            Console.WriteLine("You are in E5");
+            Console.WriteLine("You are in E5"); //Description O // Movement X // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Shiny object on the ground covered in blood. ");
+            Console.WriteLine(" Hospital Bed on wheels.. empty.. ");
+            Console.WriteLine(" with handcuffs on the rails…");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] ");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] ");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Wall");
+            Console.WriteLine(" A. [West] Hallway Intersection");
+            Console.WriteLine(" S. [South] Wall");
+            Console.WriteLine(" D. [East] Hallway");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -954,19 +953,80 @@ namespace Project_3
                     break;
             }
         }
+
+        public static void E7()
+        {
+            //Description O // Movement O // Action X // Sequence X            
+            Console.WriteLine("You are in E7");
+            Console.WriteLine(" [LAB 1]");
+            Console.WriteLine(" File cabinets were tipped over and pushed against the door to block it.");
+            Console.WriteLine(" There is a computer in the corner.");
+            Console.WriteLine(" Card key slot on the keyboard is empty.");
+            Console.WriteLine("");
+            Console.WriteLine(" W. [North] Room Wall");
+            Console.WriteLine(" A. [West] Hallway");
+            Console.WriteLine(" S. [South] Room Wall");
+            Console.WriteLine(" D. [East] Room Wall");
+            Console.WriteLine("");
+            Console.WriteLine("## ACTION ##");
+            Console.WriteLine("");
+            Console.WriteLine(" 1. ");
+            Console.WriteLine(" 2. ");
+            Console.WriteLine(" 3. ");
+            Console.WriteLine(" 4. ");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+
+            switch (response)
+            {
+                case 'w':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    E7();
+                    break;
+                case 'a':
+                    Moving();
+                    D7();
+                    break;
+                case 's':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    E7();
+                    break;
+                case 'd':
+                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    E7();
+                    break;
+                case '1':
+                    break;
+                case '2':
+                    break;
+                case '3':
+                    break;
+                case '4':
+                    break;
+            }
+        }
+
         public static void D5()
         {
-            Console.WriteLine("You are in D5");
+            Console.WriteLine("You are in D5"); //Description O // Movement X // Action X
             Console.WriteLine(" [HALLWAY INTERSECTION]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" Sign reads [North] Surgery / Recovery Rooms [East] ER / ICU / Quarantine ");
+            Console.WriteLine(" [South] Lab 1 / Staff Rooms / Utility Room / Oncology / Neurology ");
+            Console.WriteLine(" [West] Toilets");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] ");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] ");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway Towards Surgery");
+            Console.WriteLine(" A. [West] Hallway Towards Toilets");
+            Console.WriteLine(" S. [South] Hallway Towards Staff Rooms/Lab 1");
+            Console.WriteLine(" D. [East] Hallway Towards EAST WING");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -983,7 +1043,7 @@ namespace Project_3
                     D4();
                     break;
                 case 'a':
-                    Console.WriteLine("\n There is a wall.");
+                    Console.WriteLine("\n The Path is blocked.");
                     Console.WriteLine("\n Press any key to continue");
                     Console.ReadLine();
                     Console.Clear();
@@ -1009,9 +1069,9 @@ namespace Project_3
         }
         public static void D4()
         {
-            Console.WriteLine("You are in D4");
+            Console.WriteLine("You are in D4"); //Description X // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
+            Console.WriteLine(" A body is on the floor. Uniform. Police Officer.");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
@@ -1032,7 +1092,11 @@ namespace Project_3
             switch (response)
             {
                 case 'w':
-                    //Hallway blocked
+                    Console.WriteLine("\n The Path is blocked.");
+                    Console.WriteLine("\n Press any key to continue");
+                    Console.ReadLine();
+                    Console.Clear();
+                    D4();
                     break;
                 case 'a':
                     Console.WriteLine("\n There is a wall.");
@@ -1064,10 +1128,10 @@ namespace Project_3
         }
         public static void D6()
         {
-            Console.WriteLine("You are in D6");
+            Console.WriteLine("You are in D6"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" A medicine cart has been tipped over. ");
+            Console.WriteLine(" Pills have been sprawled all over the floor.");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
@@ -1120,11 +1184,11 @@ namespace Project_3
         }
         public static void D7()
         {
-            Console.WriteLine("You are in D7");
+            Console.WriteLine("You are in D7"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There is 1 door [East}. Sign reads [Lab 1]. ");
+            Console.WriteLine(" The tiny window on the door has been shattered. ");
+            Console.WriteLine(" Someone was trying to get in, but the door is closed.");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
             Console.WriteLine(" W. [North] ");
@@ -1177,17 +1241,17 @@ namespace Project_3
         }
         public static void D8()
         {
-            Console.WriteLine("You are in D8");
+            Console.WriteLine("You are in D8"); //Description O // Movement O // Action X
             Console.WriteLine(" [HALLWAY CORNER]");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There is a door [South]. ");
+            Console.WriteLine(" The sign on the door reads [Staff Room 1].");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
-            Console.WriteLine(" W. [North] ");
-            Console.WriteLine(" A. [West]");
-            Console.WriteLine(" S. [South] ");
-            Console.WriteLine(" D. [East]");
+            Console.WriteLine(" W. [North] Hallway ");
+            Console.WriteLine(" A. [West] Hallway");
+            Console.WriteLine(" S. [South] Staff Room 1");
+            Console.WriteLine(" D. [East] Wall");
             Console.WriteLine("");
             Console.WriteLine("## ACTION ##");
             Console.WriteLine("");
@@ -1234,9 +1298,9 @@ namespace Project_3
         }
         public static void C8()
         {
-            Console.WriteLine("You are in C8");
+            Console.WriteLine("You are in C8"); //Description X // Movement O // Action X
             Console.WriteLine(" [HALLWAY]");
-            Console.WriteLine("");
+            Console.WriteLine(" Vending Machine against the wall. Slightly thirsty… ");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
@@ -1288,10 +1352,10 @@ namespace Project_3
         }
         public static void B8()
         {
-            Console.WriteLine("You are in B8");
+            Console.WriteLine("You are in B8"); //Description X // Movement O // Action X
             Console.WriteLine(" [HALLWAY CORNER]");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine(" There is a door [West]. The sign on the door reads [Utility Room]. ");
+            Console.WriteLine(" There is a door [South]. The sign on the door reads [Staff Room 2]");
             Console.WriteLine("");
             Console.WriteLine(" ## MOVE ##");
             Console.WriteLine("");
