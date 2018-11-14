@@ -26,8 +26,8 @@ namespace Project_3
         }
         public static void Info()
         {
-            player.attack = 0;
-            player.health = 10;
+            player[0].attack = 0;
+            player[0].health = 10;
 
         }
 
